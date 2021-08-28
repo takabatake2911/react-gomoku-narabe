@@ -78,11 +78,11 @@ const App = () => {
 
         arr.forEach((value: number[]) => {
             if (
-                board[value[0]] == board[value[1]] &&
-                board[value[1]] == board[value[2]] &&
-                board[value[2]] == board[value[3]] &&
-                board[value[3]] == board[value[4]] &&
-                board[value[4]] == stone
+                board[value[1]] === board[value[2]] &&
+                board[value[0]] === board[value[1]] &&
+                board[value[2]] === board[value[3]] &&
+                board[value[3]] === board[value[4]] &&
+                board[value[4]] === stone
             ) {
                 setWinner(stone);
                 setIsFinished(true);

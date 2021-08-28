@@ -43,7 +43,7 @@ const Board = ({
                         style={{ display: 'inline' }}
                     >
                         <Masu stone_color={value} />
-                        {index % 13 == 12 ? <br /> : null}
+                        {index % 13 === 12 ? <br /> : null}
                     </div>
                 );
             })}
